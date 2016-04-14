@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab - April 14</title>
+
+  <!-- Latest compiled and minified bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <style>
+    .row {
+      margin: 50px 0px;
+    }
+
+    img {
+      max-height: 200px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Intro row -->
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <h1>Bernie vs Hillary</h1>
+        <p>Discover the results of each state by hovering over each image</p>
+        <img src="http://i2.cdn.turner.com/cnnnext/dam/assets/160125185949-split-bernie-hillary-exlarge-169.jpg" class="img img-responsive">
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Virginia -->
+      <div class="col-md-4 text-center">
+        <img class="img img-responsive" src="http://www.clipartfinders.com/clipart/129/bass-pro-shops-outdoor-world-for-the-ladies-129448.jpeg" id="va">
+        <h3>Virginia</h3>
+        <p id="virginia"></p>
+      </div>
+
+      <!-- Washington -->
+      <div class="col-md-4 text-center">
+        <img class="img img-responsive" src="http://access.wa.gov/Content/images/maps/wamap_2.gif" id="wa">
+        <h3>Washington</h3>
+        <p id="washington"></p>
+      </div>
+
+      <!-- Hawaii -->
+      <div class="col-md-4 text-center">
+        <img class="img img-responsive" src="http://www.hawaiistatewebsite.com/images/hawaii-county-map.jpg" id="hi">
+        <h3>Hawaii</h3>
+        <p id="hawaii"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
