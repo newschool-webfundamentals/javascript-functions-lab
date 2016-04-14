@@ -9,38 +9,25 @@ $(document).ready(function() {
   //winningMargin takes two inputs
   //the two inputs are delegate numbers
   //the function will return the difference of whichever number is greater
-
   function winningMargin(delegates1, delegates2) {
     //if first number is greater than second
     //return first number minus second number
     //if second number is greater than first number
     //return second number minus first number
-
-    if (delegates1 > delegates2) {
-      return delegates1 - delegates2;
-    } else {
-      return delegates2 - delegates1;
-    }
   }
 
   //Make a getWinner function that takes two inputs
   //The two inputs are bernie delegates and hillary delegates
-  //If bernie delegates are greater than hillarys', return "Bernie"
-  //If hillary delegates are grater than bernies', return "Hillary"
+  //If bernie delegates are greater than hillary's, return "Bernie"
+  //If hillary delegates are grater than bernie's, return "Hillary"
   function getWinner(bernieDelegates, hillaryDelegates) {
-    if (bernieDelegates > hillaryDelegates) {
-      return "Bernie"
-    } else {
-      return "Hillary"
-    }
   }
 
   // Make a getMessage function that takes 3 inputs
   // The three inputs will be winnerName, margin, stateName
   // Example of result: "Bernie won by 200 delegates in Virginia"
-  function getMessage(winner, margin, stateName) {
-    return winner + " won by " + margin + " delegates in " + stateName
-  }
+
+  //getMessage goes here
 
   //Make a getResult function that takes 3 inputs
   //First input is bernie delegates, second hillary delegates, third state name string
@@ -50,11 +37,12 @@ $(document).ready(function() {
   function getResult(bernieDelegates, hillaryDelegates, stateName) {
     var winner = getWinner(bernieDelegates, hillaryDelegates);
     var margin = winningMargin(bernieDelegates, hillaryDelegates);
-    return getMessage(winner, margin, stateName);
+    return "I'm not working yet!"
   }
 
 
-  //Do not alter code below
+  //jQuery - hovering each state replaces paragraph with text of result
+  //no need to edit the code below
   $("#va").hover(function() {
     $("#virginia").text(getResult(virginiaBernie, virginiaHillary, "Virginia"));
   });
